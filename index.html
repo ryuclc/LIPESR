@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Freelancer - Start Bootstrap Theme</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-md bg-body">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">First Item</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg fixed-top bg-secondary" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Audio demos</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-uppercase text-white bg-primary font-weight-bold rounded" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span> Menu </span><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#abstract">ABSTRACT</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#LJSpeech">LJSpeech</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#JFSpeech">JFSpeech</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Kazakh">Kazakh</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Hindi">Hindi</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Bulgarian">Bulgarian</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Malay">Malay</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead" style="background: url(&quot;assets/img/45a5c469-2540-4026-b833-4eed9535ff98.jpg&quot;) center / auto no-repeat;">
+        <div class="container d-flex flex-column align-items-center">
+            <h1 class="text-capitalize masthead-heading mb-0" style="font-size: 33px;height: 113px;">Language-independent Prosody-enhanced Speech Representations for Multilingual Speech Synthesis</h1>
+            <div class="divider-custom divider-light" style="height: 11px;"></div>
+            <p class="masthead-subheading font-weight-light mb-0" style="font-size: 19px;">Chang Liu,&nbsp;Zhen-Hua Ling, Ya-Jun Hu</p>
+        </div>
+    </header>
+    <section id="abstract" class="page-section portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary page-section-heading mb-0">ABstract</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-icon" style="width: 80%;height: auto;">
+                    <p style="text-align: justify;font-size: 19px;">This paper proposes language-independent prosody-enhanced speech representations to improve the naturalness of speech synthesis for the target languages that lack prosodic labels. To build text-to-speech (TTS) systems for low-resource languages, recent studies have employed the representations extracted from self-supervised learning (SSL) speech models, such as wav2vec 2.0, as intermediate representations in TTS models. However, they have generally focused only on the linguistic and phonetic information in SSL representations, disregarding the prosodic information. This paper investigates the prosodic information contained in the multilingual wav2vec 2.0 model through layer-wise probing tests utilizing acoustic prosodic features and prosodic labels. Furthermore, we propose a language-independent prosody enhancement approach to improve the prosodic properties of SSL models. The proposed method introduces a prosodic label prediction loss to fine-tune wav2vec 2.0 model with multilingual prosody-annotated corpora. From the fine-tuned wav2vec 2.0 model, the language-independent prosody-enhanced speech representations are extracted and serve as intermediate representations of our acoustic model in the downstream TTS task. The experimental results on six target languages demonstrate that our proposed prosody-enhanced speech representations outperform the original wav2vec 2.0 representations without enhancement.</p>
+                </div>
+            </div>
+            <div class="divider-custom">
+                <div class="divider-custom-icon" style="width: 80%;height: auto;">
+                    <p style="text-align: center;font-size: 19px;">[paper]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://github.com/ryuclc/JFSpeech" style="color: rgb(44,62,80);" target="_blank">[JFSpeech]</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://github.com/ryuclc/LIPESR-code" style="color: rgb(44,62,80);" target="_blank">[code]</a>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="LJSpeech" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #1abc9c;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">English (LJSpeech)</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;height: auto;">
+                    <div class="table-responsive text-break text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #0f6c59;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: 100%;">
+                                    <th class="align-content-center" style="background: transparent;width: 30%;min-width: 0;text-align: center;font-size: 22px;height: 79.3333px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">In the latter duties he was, however, supervised by three auditors, freely chosen by the prisoners among themselves.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;" preload="auto">
+                                            <source src="audio/ljspeech/GT/LJ003-0025.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;" preload="auto">
+                                        <source src="audio/ljspeech/Taco-Char/LJ003-0025.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR/LJ003-0025.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-enhanced/LJ003-0025.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-ref/LJ003-0025.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">The unfortunate man was compelled at length to adopt the habits of his associates;</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;" preload="auto">
+                                            <source src="audio/ljspeech/GT/LJ003-0126.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/Taco-Char/LJ003-0126.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR/LJ003-0126.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-enhanced/LJ003-0126.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-ref/LJ003-0126.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">In these places the prisoners are often without a proper supply of air and light; frequently the jails are mere dungeons under the town hall.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;" preload="auto">
+                                            <source src="audio/ljspeech/GT/LJ005-0293.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/Taco-Char/LJ005-0293.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR/LJ005-0293.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-enhanced/LJ005-0293.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-ref/LJ005-0293.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">In another part there were men charged with and convicted of unnatural offenses shut up with lads of tender years;</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;" preload="auto">
+                                            <source src="audio/ljspeech/GT/LJ006-0062.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/Taco-Char/LJ006-0062.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR/LJ006-0062.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-enhanced/LJ006-0062.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-ref/LJ006-0062.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: none;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-bottom-style: none;">They had introduced "much order and cleanliness,"</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;" preload="auto">
+                                            <source src="audio/ljspeech/GT/LJ007-0006.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/Taco-Char/LJ007-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR/LJ007-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-enhanced/LJ007-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ljspeech/XLSR-ref/LJ007-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="JFSpeech" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #0ea7c6;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">Spanish (JFSpeech)</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;height: auto;">
+                    <div class="table-responsive text-break text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #096b7e;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: auto;">
+                                    <th class="align-content-center" style="background: transparent;width: 30%;min-width: 0;text-align: center;font-size: 22px;height: 79.3333px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Le contuvieron el temor y el hábito de obedecer, que siempre reprimen un tanto, al principio, los ímpetus rebeldes;</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/jfspeech/GT/JF002-0033.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/Taco-Char/JF002-0033.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR/JF002-0033.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-enhanced/JF002-0033.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-ref/JF002-0033.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">y ahí te suelto la bendición, y en seguida gran comilona, los amigos de la familia y la parentela del novio que brindan y me ponen la cabeza como un bombo,</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/jfspeech/GT/JF003-0037.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/Taco-Char/JF003-0037.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR/JF003-0037.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-enhanced/JF003-0037.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-ref/JF003-0037.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">y dale con si me han casado contra mi gusto, y toma conque ya me desquitaría y le mataría á palos.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/jfspeech/GT/JF003-0052.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/Taco-Char/JF003-0052.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR/JF003-0052.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-enhanced/JF003-0052.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-ref/JF003-0052.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Por mis barbas—contestaba uno de los truanes—que debe ser el mismo Arzobispo en persona.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/jfspeech/GT/JF006-0071.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/Taco-Char/JF006-0071.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR/JF006-0071.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-enhanced/JF006-0071.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-ref/JF006-0071.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: none;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-bottom-style: none;">un escudero puso el estribo, y una dama seguida de dos dueñas descendió del coche, y se dirigió á la escalera principal.</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/jfspeech/GT/JF009-0006.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/Taco-Char/JF009-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR/JF009-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-enhanced/JF009-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/jfspeech/XLSR-ref/JF009-0006.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Kazakh" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #1abc9c;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">Kazakh</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;height: auto;">
+                    <div class="table-responsive text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #0f6c59;min-height: 0;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: auto;">
+                                    <th class="align-content-center" style="background: transparent;width: 14%;text-align: center;font-size: 22px;height: 10%;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);height: 10%;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);height: 10%;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);height: 10%;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);height: 10%;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94);height: 10%;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;min-height: 0;position: static;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;min-height: 0;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Нұрбике қозғала бергендеақ, Жұмакүлдің тап беруі даусыз одан кейін қара пышақ Нұрбикенің өз көкірегінде қадалып жүрмесін.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;height: 20%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/kk/GT/00000018.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;height: 20%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/Taco-Char/00000018.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;height: 20%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR/00000018.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;height: 20%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-enhanced/00000018.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;height: 20%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-ref/00000018.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Бұл технологияның ерекшелігі оқытудың бірыңғай бағдарламасы болмайды әркім табиғат берген даму жолымен жүреді</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/kk/GT/00000106.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/Taco-Char/00000106.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR/00000106.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-enhanced/00000106.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-ref/00000106.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;min-height: 214px;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Олар өз қоржындарына екі бірдей алтын медаль салды.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/kk/GT/00000166.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/Taco-Char/00000166.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR/00000166.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-enhanced/00000166.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-ref/00000166.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Қансырап, екі дүние ортасында өліммен арпалысқан батыр үшінші күні шаһид болады.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/kk/GT/00000354.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/Taco-Char/00000354.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR/00000354.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-enhanced/00000354.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-ref/00000354.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: none;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-bottom-style: none;">Мүмкіндік болса, жұмыста ішетін түскі асты да үйден әзірлеп алып барыңыз.</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/kk/GT/00000386.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/Taco-Char/00000386.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR/00000386.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-enhanced/00000386.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/kk/XLSR-ref/00000386.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Hindi" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #0ea7c6;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">Hindi</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;">
+                    <div class="table-responsive text-break text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #096b7e;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: auto;">
+                                    <th class="align-content-center" style="background: transparent;width: 30%;min-width: 0;text-align: center;font-size: 22px;height: 79.3333px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">मार्ग की स्थिति छत्रपति शिवाजी स्टेशन के पास नहीं मिल सकती है.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/hi/GT/00000751.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/Taco-Char/00000751.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR/00000751.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-enhanced/00000751.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-ref/00000751.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">पांचवा चुना. यह जिस तरह से जुड़ा हुआ है</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/hi/GT/00000886.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/Taco-Char/00000886.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR/00000886.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-enhanced/00000886.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-ref/00000886.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">टिप्पणीकार हरभजन सिंह ने यह भी कहा कि स्मिथ ने तीनचार कदम चलाए और फिर लौट आए</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/hi/GT/00001432.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/Taco-Char/00001432.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR/00001432.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-enhanced/00001432.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-ref/00001432.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">उसने, इस पार्टी की कुछ फोटो माइक्रो ब्लॉगिंग साइट ट्विटर पर भी शेयर कीं.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                           <source src="audio/hi/GT/00001656.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/Taco-Char/00001656.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR/00001656.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-enhanced/00001656.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-ref/00001656.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: none;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-bottom-style: none;">कप्तान प्रियम गर्ग ने सात, ध्रुव जुरेल ने बाइस, अथर्व अंकोलेकर ने तीन, रवि बिश्नोई ने दो, सुशांत मिश्रा ने तीन और आकाश सिंह ने नाबाद एक रन बनाया</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/hi/GT/00001739.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/Taco-Char/00001739.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR/00001739.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-enhanced/00001739.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/hi/XLSR-ref/00001739.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Bulgarian" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #1abc9c;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">Bulgarian</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;">
+                    <div class="table-responsive text-break text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #0f6c59;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: 100%;">
+                                    <th class="align-content-center" style="background: transparent;width: 30%;min-width: 0;text-align: center;font-size: 22px;height: 79.3333px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Както не могат всички да са еднакво умни и образовани, така и не всички могат да имат физически данни и силови възможности за тежък труд.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/bg/GT/00000034.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/Taco-Char/00000034.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR/00000034.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-enhanced/00000034.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-ref/00000034.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Трябва ли координаторът по проекти да получава повече от лелката на касата в супермаркета?</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/bg/GT/00000424.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/Taco-Char/00000424.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR/00000424.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-enhanced/00000424.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-ref/00000424.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Тази зона на припокриване е зоната на комфорт за двамата, и винаги можем, при желание от двете страни да излизаме от нея и да опитваме нови неща.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/bg/GT/00000526.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/Taco-Char/00000526.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR/00000526.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-enhanced/00000526.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-ref/00000526.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Много истории има покрай това гробище, няма да преразказвам истории.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/bg/GT/00000725.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/Taco-Char/00000725.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR/00000725.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-enhanced/00000725.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-ref/00000725.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-style: none;">Което не значи мама да е подбутвана, да не е посещавана, да не е канена, да не ѝ се помага и въобще, да е в положението на нежелана персона.</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-style: none;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/bg/GT/00001039.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/Taco-Char/00001039.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR/00001039.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-enhanced/00001039.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/bg/XLSR-ref/00001039.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Malay" class="page-section portfolio" style="--bs-primary: #1abc9c;--bs-primary-rgb: 26,188,156;background: #0ea7c6;padding-top: 77px;">
+        <div class="container" style="color: rgb(255,255,255);">
+            <h1 style="color: rgb(255,255,255);text-align: center;height: 80px;font-size: 34px;" class="page-section-heading mb-0">Malay</h1>
+            <div class="divider-custom" style="width: 100%;">
+                <div class="divider-custom-icon" style="width: 100%;">
+                    <div class="table-responsive text-break text-center" style="background: #fefefe;border-radius: 18px;border-width: 0px;border-style: none;overflow-y: hidden;overflow-x: hidden;width: 100%;max-width: 100%;display: block;box-shadow: 3px 3px 20px 4px #096b7e;">
+                        <table class="table">
+                            <thead style="width: 100%;height: 80px;">
+                                <tr style="width: 100%;border-bottom-width: 1px;border-bottom-style: solid;box-shadow: 0px 1px 12px 0px rgb(143,143,143);height: auto;">
+                                    <th class="align-content-center" style="background: transparent;width: 30%;min-width: 0;text-align: center;font-size: 22px;height: 79.3333px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Text</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Ground Truth</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">Taco-Char&nbsp;</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-enhanced</th>
+                                    <th class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-style: none;border-right-style: none;border-bottom: 5px none rgb(94,94,94) ;">XLSR-ref</th>
+                                </tr>
+                            </thead>
+                            <tbody style="width: 100%;height: 620px;">
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Ianya adalah suatu perkara yang tidak boleh disangkal lagi oleh sesiapa lagi.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/ms/GT/00000334.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/Taco-Char/00000334.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR/00000334.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-enhanced/00000334.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-ref/00000334.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Elok lah tu jika dibandingkan dengan setahun.&nbsp;Mahu gemuk jadinya duduk restoran lama-lama.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/ms/GT/00000685.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/Taco-Char/00000685.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR/00000685.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-enhanced/00000685.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-ref/00000685.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Kalau aku jadi pindah hari itu&nbsp;pasti aku nak rindu kau orang semua,&nbsp;akan pasti aku akan rindu kenangan-kenangan kita.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/ms/GT/00000877.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/Taco-Char/00000877.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR/00000877.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-enhanced/00000877.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-ref/00000877.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: solid;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;">Alternatif sistem biometrik.&nbsp;Sistem biometrik&nbsp;terus dipertikaikan sebaik sahaja dicadangkan penggunaannya dalam pilihan raya.</td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/ms/GT/00001003.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/Taco-Char/00001003.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR/00001003.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-enhanced/00001003.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;border-style: solid;width: 14%;font-size: 22px;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-ref/00001003.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                                <tr style="height: 20%;border-bottom-width: 1px;border-bottom-style: none;">
+                                    <td class="align-content-center" style="background: transparent;width: 30%;min-width: 0;font-size: 18px;text-align: left;border-bottom-style: none;">Haniff mengangguk,&nbsp;pintu lif akhirnya terbuka.&nbsp;Dia melangkah terlebih dahulu&nbsp;kemudian diikuti oleh Wana,&nbsp;Wana mengetip.</td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                            <source src="audio/ms/GT/00001292.wav" type="audio/wav">
+                                        </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/Taco-Char/00001292.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR/00001292.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-enhanced/00001292.wav" type="audio/wav">
+                                    </audio></td>
+                                    <td class="align-content-center" style="background: transparent;width: 14%;font-size: 22px;border-bottom-style: none;"><audio controls="" style="width: 100%;">
+                                        <source src="audio/ms/XLSR-ref/00001292.wav" type="audio/wav">
+                                    </audio></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-11 mb-5 mb-lg-0" style="width: 100%;">
+                    <h4 class="text-uppercase mb-4"></h4>
+                    <p class="lead mb-0"> National Engineering Research Center of Speech and Language Information Processing <br>University of Science and Technology of China</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright © ryuclc 2024</small></div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
